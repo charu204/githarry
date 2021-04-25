@@ -1,1 +1,1 @@
-print ("in file1  yes")
+print ("in file1")
