@@ -17,7 +17,7 @@ pipeline {
 			}
 		stage ('three') {
 			steps {
-				input 'three proceed ?'
+				input ('three proceed ?')
 			}
 			}
 		stage ('four') {
