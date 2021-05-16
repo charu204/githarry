@@ -19,21 +19,20 @@ pipeline {
 			steps {
 				input ('three proceed ?')
 			}
-			}
+		}
 		stage ('four') {
 			parallel {
 				stage ('par1') {
 					steps {
 						echo 'par1 stage'
 					}
-					}
+				}
 				stage ('par2') {
 					steps {
 						echo 'par2 stage'
 					}
-					}
+				}
 }
 }
 }
-}
-				
+}			
