@@ -1,0 +1,39 @@
+pipeline {
+	agent any 
+	stages {
+		stage ('one') {
+			steps {
+				echo 'stage1'
+			}
+		}
+		stage ('two') {
+			when {
+				not {
+					branch 'main'
+				}
+			}
+			steps {
+				echo 'stage2'
+			}
+		stage ('three') {
+			steps {
+				input 'three proceed ?'
+			}
+			}
+		stage ('four') {
+			parallel {
+				stage ('par1') {
+					steps {
+						echo 'par1 stage'
+					}
+					}
+				stage ('par2') {
+					steps {
+						echo 'par2 stage'
+					}
+					}
+}
+}
+}
+}
+				
