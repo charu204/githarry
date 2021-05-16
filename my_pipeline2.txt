@@ -15,6 +15,7 @@ pipeline {
 			steps {
 				echo 'stage2'
 			}
+		}
 		stage ('three') {
 			steps {
 				input ('three proceed ?')
